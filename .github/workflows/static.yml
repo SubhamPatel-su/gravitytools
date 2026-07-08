@@ -1,0 +1,2976 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GravityTools - Launch Your Premium 140+ Online Tools Website Instantly</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Get instant access to GravityTools, a premium HTML/CSS/JS website script containing 140+ tools. Launch, customize, monetize with Google AdSense, and resell with a commercial license.">
+    <meta name="keywords"
+        content="website script, utility tools, premium script, resell rights, side hustle India, make money online, digital tools, AdSense script, commercial license">
+    <link rel="canonical" href="https://gravitytools.io">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gravitytools.io/">
+    <meta property="og:title" content="GravityTools - Premium 140+ Online Tools Website Script">
+    <meta property="og:description"
+        content="Own a premium tools website like Calculator.net. 140+ premium web utility tools. Customize, monetize with AdSense, and keep 100% of the profits. Commercial license included.">
+    <meta property="og:image" content="https://lh3.googleusercontent.com/d/16oSYvo_AAh2SeWCmJoa07Q99pMRYiA2m">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://gravitytools.io/">
+    <meta name="twitter:title" content="GravityTools - Premium 140+ Online Tools Website Script">
+    <meta name="twitter:description"
+        content="Launch your online tools business today. One-time payment, unlimited commercial resale rights, and 100% control over code.">
+    <meta name="twitter:image" content="https://lh3.googleusercontent.com/d/16oSYvo_AAh2SeWCmJoa07Q99pMRYiA2m">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- JSON-LD Structured Data Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Product",
+          "@id": "https://gravitytools.io/#product",
+          "name": "GravityTools Script",
+          "image": "https://lh3.googleusercontent.com/d/16oSYvo_AAh2SeWCmJoa07Q99pMRYiA2m",
+          "description": "Premium website script featuring 140+ advanced utilities, web developer tools, calculators, and builders ready for quick hosting & instant monetization.",
+          "brand": {
+            "@type": "Brand",
+            "name": "GravityTools"
+          },
+          "offers": {
+            "@type": "Offer",
+            "url": "https://gravitytools.io",
+            "priceCurrency": "INR",
+            "price": "299",
+            "priceValidUntil": "2027-12-31",
+            "availability": "https://schema.org/InStock",
+            "valueAddedTaxIncluded": "true"
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://gravitytools.io/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What is GravityTools?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "GravityTools is a fully packaged website script consisting of over 140 online utilities, generators, trackers, and converters designed with premium HTML, CSS, and clean ES6 JavaScript. You buy it once, host it on your own server, and monetize it or resell it under your own branding."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I monetize it using Google AdSense?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, absolutely! The codebase is structured elegantly with dedicated semantic placeholders where you can paste your AdSense auto-ads code or banner ad blocks, allowing you to maximize ad revenues seamlessly."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Are there any recurring monthly charges?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. GravityTools follows a lifetime ownership policy. You make a single payment of ₹299 today, and you will secure complete source code files and lifetime updates without any recurring costs."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        /* CSS Variables & Design Tokens */
+        :root {
+            --bg-primary: #0B0C10;
+            --bg-card: #131520;
+            --border-color: #222538;
+            --text-primary: #F3F4F6;
+            --text-secondary: #9CA3AF;
+            --text-muted: #6B7280;
+            --neon-purple: #7C3AED;
+            --neon-purple-glow: rgba(124, 58, 237, 0.4);
+            --cyan: #06B6D4;
+            --cyan-glow: rgba(6, 182, 212, 0.4);
+            --emerald: #10B981;
+            --emerald-glow: rgba(16, 185, 129, 0.4);
+            --font-family: 'Plus Jakarta Sans', sans-serif;
+            --max-width: 1280px;
+            --transition-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            --transition-bounce: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        /* Base & Reset Styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            font-family: var(--font-family);
+            font-size: 15px;
+            /* baseline slightly smaller for mobile reading */
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        body {
+            position: relative;
+            overflow-x: hidden;
+            background-color: var(--bg-primary);
+        }
+
+        /* Accessibility: Highlight focus states visually */
+        *:focus-visible {
+            outline: 2px solid var(--cyan);
+            outline-offset: 4px;
+        }
+
+        /* Fluid Typography and Spacing Container - Optimized for Mobile Padding */
+        .container {
+            width: 100%;
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 16px;
+        }
+
+        /* Ambient Floating Gradient Blobs - Softened on Mobile */
+        .ambient-blobs {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            height: 100%;
+            max-height: 1200px;
+            z-index: -1;
+            pointer-events: none;
+            overflow: hidden;
+        }
+
+        .blob {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(100px);
+            opacity: 0.12;
+            animation: floatBlob 20s infinite alternate ease-in-out;
+        }
+
+        .blob-1 {
+            width: 280px;
+            height: 280px;
+            background: var(--neon-purple);
+            top: -50px;
+            left: 5%;
+        }
+
+        .blob-2 {
+            width: 300px;
+            height: 300px;
+            background: var(--cyan);
+            top: 250px;
+            right: -10%;
+            animation-delay: -5s;
+        }
+
+        .blob-3 {
+            width: 250px;
+            height: 250px;
+            background: var(--emerald);
+            top: 600px;
+            left: -10%;
+            animation-delay: -10s;
+        }
+
+        @keyframes floatBlob {
+            0% {
+                transform: translate(0, 0) scale(1);
+            }
+
+            50% {
+                transform: translate(30px, -20px) scale(1.1);
+            }
+
+            100% {
+                transform: translate(-20px, 30px) scale(0.95);
+            }
+        }
+
+        /* Header & Navigation - Mobile First Default */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(34, 37, 56, 0.4);
+            transition: var(--transition-smooth);
+            background: rgba(11, 12, 16, 0.8);
+        }
+
+        .header--scrolled {
+            padding: 8px 0;
+            background: rgba(11, 12, 16, 0.95);
+            border-bottom: 1px solid rgba(124, 58, 237, 0.2);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .nav-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 64px;
+            transition: var(--transition-smooth);
+        }
+
+        .header--scrolled .nav-wrapper {
+            height: 56px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+            color: var(--text-primary);
+            font-size: 1.25rem;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+        }
+
+        .logo-symbol {
+            width: 28px;
+            height: 28px;
+            background: linear-gradient(135deg, var(--neon-purple), var(--cyan));
+            border-radius: 6px;
+            display: grid;
+            place-items: center;
+            font-weight: 800;
+            font-size: 1rem;
+            color: var(--bg-primary);
+            box-shadow: 0 0 10px var(--neon-purple-glow);
+        }
+
+        .logo-text {
+            display: inline-block;
+        }
+
+        /* Buttons & CTA styles - Minimum Touch Target 44px */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            font-family: var(--font-family);
+            font-weight: 600;
+            font-size: 0.9rem;
+            padding: 12px 20px;
+            min-height: 44px;
+            border-radius: 12px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: var(--transition-smooth);
+            border: none;
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--neon-purple), #9055f2);
+            color: #FFFFFF;
+            box-shadow: 0 4px 15px var(--neon-purple-glow);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px var(--neon-purple-glow), 0 0 12px rgba(124, 58, 237, 0.5);
+        }
+
+        .btn-primary:active {
+            transform: translateY(1px);
+        }
+
+        .btn-secondary {
+            background: rgba(34, 37, 56, 0.6);
+            color: var(--text-primary);
+            border: 1px solid var(--border-color);
+            backdrop-filter: blur(10px);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(34, 37, 56, 0.9);
+            border-color: var(--cyan);
+            color: #FFFFFF;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(6, 182, 212, 0.15);
+        }
+
+        /* Hero Section - Mobile First (Stacked layout) */
+        .hero {
+            padding: 110px 0 48px 0;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero-content {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+            width: 100%;
+        }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(124, 58, 237, 0.1);
+            border: 1px solid rgba(124, 58, 237, 0.3);
+            color: #C084FC;
+            padding: 6px 14px;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+
+        .badge-dot {
+            width: 8px;
+            height: 8px;
+            background-color: var(--emerald);
+            border-radius: 50%;
+            box-shadow: 0 0 8px var(--emerald);
+            animation: pulse-dot 1.5s infinite;
+        }
+
+        @keyframes pulse-dot {
+            0% {
+                transform: scale(0.9);
+                opacity: 0.6;
+            }
+
+            50% {
+                transform: scale(1.2);
+                opacity: 1;
+            }
+
+            100% {
+                transform: scale(0.9);
+                opacity: 0.6;
+            }
+        }
+
+        .hero-title {
+            font-size: 2.1rem;
+            line-height: 1.25;
+            font-weight: 800;
+            letter-spacing: -1px;
+            color: #FFFFFF;
+        }
+
+        .hero-title span {
+            background: linear-gradient(135deg, #A855F7 10%, #06B6D4 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero-subtitle {
+            font-size: 1.05rem;
+            color: var(--text-secondary);
+            font-weight: 400;
+            line-height: 1.5;
+            max-width: 580px;
+        }
+
+        .hero-actions {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            width: 100%;
+        }
+
+        .hero-actions .btn {
+            width: 100%;
+        }
+
+        .hero-illustration {
+            width: 100%;
+            max-width: 500px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Glassmorphic Mockup Container */
+        .glass-mockup {
+            background: rgba(19, 21, 32, 0.45);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 20px;
+            padding: 16px;
+            width: 100%;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            position: relative;
+            overflow: hidden;
+            transition: var(--transition-smooth);
+        }
+
+        .glass-mockup:hover {
+            border-color: rgba(124, 58, 237, 0.3);
+            box-shadow: 0 25px 50px rgba(124, 58, 237, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.15);
+        }
+
+        .mockup-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 16px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+            padding-bottom: 10px;
+        }
+
+        .mockup-dots {
+            display: flex;
+            gap: 6px;
+        }
+
+        .mockup-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+        }
+
+        .mockup-dot:nth-child(1) {
+            background-color: #EF4444;
+        }
+
+        .mockup-dot:nth-child(2) {
+            background-color: #F59E0B;
+        }
+
+        .mockup-dot:nth-child(3) {
+            background-color: #10B981;
+        }
+
+        .mockup-url {
+            background: rgba(0, 0, 0, 0.4);
+            border-radius: 6px;
+            padding: 2px 12px;
+            font-size: 0.7rem;
+            color: var(--text-muted);
+            border: 1px solid rgba(255, 255, 255, 0.04);
+            width: 65%;
+            text-align: center;
+            letter-spacing: 0.5px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        /* Mockup Code Preview Elements */
+        .mockup-body {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .mockup-preview-box {
+            background: linear-gradient(145deg, rgba(20, 20, 25, 0.8), rgba(10, 10, 15, 0.9));
+            border-radius: 12px;
+            padding: 14px;
+            border: 1px solid rgba(255, 255, 255, 0.03);
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .mockup-tool-card {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(255, 255, 255, 0.03);
+            padding: 10px;
+            border-radius: 8px;
+            border-left: 3px solid var(--neon-purple);
+        }
+
+        .mockup-tool-icon {
+            width: 32px;
+            height: 32px;
+            background: rgba(124, 58, 237, 0.2);
+            border-radius: 6px;
+            display: grid;
+            place-items: center;
+            color: #C084FC;
+            font-size: 1rem;
+        }
+
+        .mockup-tool-info {
+            flex-grow: 1;
+            min-width: 0;
+        }
+
+        .mockup-tool-title {
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: #FFF;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .mockup-tool-desc {
+            font-size: 0.65rem;
+            color: var(--text-muted);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .mockup-badge {
+            background: var(--emerald-glow);
+            color: #34D399;
+            font-size: 0.6rem;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: 700;
+            white-space: nowrap;
+        }
+
+        /* Trust Bar - Mobile Optimized Stack */
+        .trust-bar {
+            background: rgba(19, 21, 32, 0.6);
+            border-top: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border-color);
+            padding: 24px 0;
+            backdrop-filter: blur(10px);
+            position: relative;
+            z-index: 10;
+        }
+
+        .trust-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+            text-align: center;
+        }
+
+        .trust-label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-muted);
+            font-weight: 700;
+        }
+
+        .trust-gateways {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+
+        .gateway-pill {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            padding: 6px 12px;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--text-secondary);
+        }
+
+        .trust-benefits {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            align-items: center;
+        }
+
+        .benefit-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: #FFFFFF;
+        }
+
+        .benefit-item svg {
+            color: var(--emerald);
+            width: 16px;
+            height: 16px;
+        }
+
+        /* General Section Structure */
+        .section {
+            padding: 48px 0;
+            position: relative;
+        }
+
+        .section-header {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 36px auto;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            color: #FFFFFF;
+            line-height: 1.3;
+        }
+
+        .section-title span {
+            background: linear-gradient(135deg, var(--neon-purple), var(--cyan));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .section-subtitle {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        /* Carousel Component - Mobile Swipe Native feel */
+        .carousel-container {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            border-radius: 18px;
+            border: 1px solid var(--border-color);
+            background: var(--bg-card);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+            touch-action: pan-y;
+            /* allows native page scrolling vertically, blocks horizontal */
+        }
+
+        .carousel-track-wrapper {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .carousel-track {
+            display: flex;
+            transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+            width: 100%;
+            will-change: transform;
+        }
+
+        .carousel-slide {
+            flex: 0 0 100%;
+            width: 100%;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            aspect-ratio: 16/10;
+            background: #000;
+        }
+
+        .carousel-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.8s ease;
+            opacity: 0;
+        }
+
+        .carousel-slide img.loaded {
+            opacity: 1;
+        }
+
+        /* Fullscreen View Link Overlay - Dynamic positioning */
+        .carousel-overlay {
+            position: absolute;
+            bottom: 12px;
+            right: 12px;
+            z-index: 10;
+        }
+
+        .carousel-overlay .btn {
+            min-height: 38px;
+            padding: 8px 14px;
+            font-size: 0.8rem;
+        }
+
+        /* Carousel Navigation Buttons - Hidden on smallest phones to favor swipes, visible on media */
+        .carousel-btn {
+            display: none;
+            /* hidden on small mobile */
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: rgba(19, 21, 32, 0.85);
+            border: 1px solid var(--border-color);
+            color: #FFFFFF;
+            place-items: center;
+            cursor: pointer;
+            z-index: 15;
+            transition: var(--transition-smooth);
+            backdrop-filter: blur(10px);
+        }
+
+        .carousel-btn:hover {
+            background: var(--neon-purple);
+            border-color: var(--neon-purple);
+            box-shadow: 0 0 10px var(--neon-purple-glow);
+        }
+
+        .carousel-btn--prev {
+            left: 12px;
+        }
+
+        .carousel-btn--next {
+            right: 12px;
+        }
+
+        .carousel-pagination {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            padding: 16px 0;
+            background: rgba(19, 21, 32, 0.9);
+            border-top: 1px solid var(--border-color);
+        }
+
+        .carousel-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--border-color);
+            cursor: pointer;
+            border: none;
+            transition: var(--transition-smooth);
+        }
+
+        .carousel-dot--active {
+            background: var(--neon-purple);
+            width: 22px;
+            border-radius: 4px;
+            box-shadow: 0 0 8px var(--neon-purple-glow);
+        }
+
+        /* Lightbox Fullscreen Modal */
+        .lightbox {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(11, 12, 16, 0.95);
+            z-index: 2000;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            backdrop-filter: blur(15px);
+            padding: 16px;
+        }
+
+        .lightbox.active {
+            display: flex;
+            opacity: 1;
+        }
+
+        .lightbox-content {
+            position: relative;
+            max-width: 100%;
+            max-height: 80%;
+        }
+
+        .lightbox-img {
+            max-width: 100%;
+            max-height: 100%;
+            border-radius: 12px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+            border: 1px solid var(--border-color);
+            object-fit: contain;
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: -44px;
+            right: 0;
+            background: none;
+            border: none;
+            color: #FFF;
+            font-size: 2.2rem;
+            cursor: pointer;
+            width: 44px;
+            height: 44px;
+            display: grid;
+            place-items: center;
+            transition: var(--transition-smooth);
+        }
+
+        .lightbox-close:hover {
+            color: var(--neon-purple);
+        }
+
+        /* Feature Grid Section - Mobile single-column baseline */
+        .feature-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 16px;
+        }
+
+        .feature-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 18px;
+            padding: 24px;
+            position: relative;
+            overflow: hidden;
+            transition: var(--transition-smooth);
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .feature-card:hover {
+            border-color: rgba(124, 58, 237, 0.3);
+            box-shadow: 0 15px 30px rgba(124, 58, 237, 0.08);
+        }
+
+        .feature-icon-wrapper {
+            width: 44px;
+            height: 44px;
+            border-radius: 10px;
+            display: grid;
+            place-items: center;
+            font-size: 1.2rem;
+        }
+
+        .icon-purple {
+            background: rgba(124, 58, 237, 0.15);
+            color: #C084FC;
+            border: 1px solid rgba(124, 58, 237, 0.3);
+        }
+
+        .icon-cyan {
+            background: rgba(6, 182, 212, 0.15);
+            color: #22D3EE;
+            border: 1px solid rgba(6, 182, 212, 0.3);
+        }
+
+        .icon-emerald {
+            background: rgba(16, 185, 129, 0.15);
+            color: #34D399;
+            border: 1px solid rgba(16, 185, 129, 0.3);
+        }
+
+        .feature-card-title {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: #FFFFFF;
+        }
+
+        .feature-card-desc {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            line-height: 1.5;
+        }
+
+        /* Value Comparison Section - Stacked Default */
+        .value-box {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        .value-left {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .value-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .value-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            border-bottom: 1px dashed var(--border-color);
+            padding-bottom: 8px;
+        }
+
+        .value-item .item-cost {
+            font-weight: 700;
+            color: #F3F4F6;
+        }
+
+        .value-item--total {
+            border-bottom: none;
+            padding-top: 8px;
+            font-weight: 800;
+            font-size: 1.15rem;
+            color: #EF4444;
+        }
+
+        .value-item--total .item-cost {
+            color: #EF4444;
+            font-size: 1.25rem;
+        }
+
+        .value-right {
+            background: linear-gradient(135deg, rgba(124, 58, 237, 0.15), rgba(6, 182, 212, 0.15));
+            border: 1px solid rgba(124, 58, 237, 0.3);
+            border-radius: 16px;
+            padding: 32px 24px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .value-badge {
+            position: absolute;
+            top: 12px;
+            right: -28px;
+            background: var(--emerald);
+            color: #FFF;
+            font-size: 0.65rem;
+            font-weight: 800;
+            padding: 4px 28px;
+            transform: rotate(45deg);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .value-right-title {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--cyan);
+            font-weight: 700;
+        }
+
+        .value-price {
+            font-size: 2.75rem;
+            font-weight: 800;
+            color: #FFFFFF;
+            line-height: 1;
+        }
+
+        .value-price span {
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: var(--text-secondary);
+        }
+
+        .value-note {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+
+        /* Profit Calculator Section */
+        .calculator-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            padding: 24px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        .calc-inputs {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .calc-group {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .calc-label-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .calc-label {
+            font-weight: 700;
+            font-size: 0.9rem;
+            color: #FFF;
+        }
+
+        .calc-val {
+            font-weight: 800;
+            font-size: 1rem;
+            color: var(--cyan);
+        }
+
+        /* Clean range inputs optimized for fingertips */
+        .calc-slider {
+            -webkit-appearance: none;
+            width: 100%;
+            height: 8px;
+            border-radius: 4px;
+            background: var(--border-color);
+            outline: none;
+            cursor: pointer;
+        }
+
+        .calc-slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 24px;
+            /* optimized mobile width */
+            height: 24px;
+            /* optimized mobile height */
+            border-radius: 50%;
+            background: var(--cyan);
+            box-shadow: 0 0 10px var(--cyan-glow);
+            transition: var(--transition-smooth);
+        }
+
+        .calc-results {
+            background: linear-gradient(135deg, rgba(19, 21, 32, 0.8), rgba(11, 12, 16, 0.9));
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 32px 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            gap: 8px;
+        }
+
+        .calc-results-title {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-secondary);
+            font-weight: 700;
+        }
+
+        .calc-results-amount {
+            font-size: 2.75rem;
+            font-weight: 800;
+            color: var(--emerald);
+            line-height: 1.1;
+            text-shadow: 0 0 20px var(--emerald-glow);
+        }
+
+        .calc-results-desc {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            line-height: 1.4;
+        }
+
+        /* Who is this for Section */
+        .audience-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 16px;
+        }
+
+        .audience-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 18px;
+            padding: 24px;
+            display: flex;
+            gap: 16px;
+            transition: var(--transition-smooth);
+        }
+
+        .audience-card:hover {
+            border-color: rgba(6, 182, 212, 0.3);
+            box-shadow: 0 12px 24px rgba(6, 182, 212, 0.05);
+        }
+
+        .audience-num {
+            font-size: 1.25rem;
+            font-weight: 800;
+            color: rgba(6, 182, 212, 0.3);
+            line-height: 1;
+        }
+
+        .audience-content {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .audience-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #FFFFFF;
+        }
+
+        .audience-desc {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            line-height: 1.4;
+        }
+
+        /* Commercial Rights Section */
+        .rights-box {
+            background: linear-gradient(135deg, rgba(124, 58, 237, 0.05), rgba(6, 182, 212, 0.05));
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+        }
+
+        .rights-left {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        .rights-title {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: #FFFFFF;
+            line-height: 1.3;
+        }
+
+        .rights-title span {
+            color: var(--cyan);
+        }
+
+        .rights-right {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 16px;
+        }
+
+        .rights-card {
+            background: rgba(19, 21, 32, 0.6);
+            border: 1px solid var(--border-color);
+            border-radius: 14px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            transition: var(--transition-smooth);
+        }
+
+        .rights-card:hover {
+            border-color: rgba(16, 185, 129, 0.3);
+            background: rgba(19, 21, 32, 0.9);
+        }
+
+        .rights-icon {
+            color: var(--emerald);
+            display: flex;
+            align-items: center;
+        }
+
+        .rights-card-title {
+            font-weight: 700;
+            color: #FFFFFF;
+            font-size: 1rem;
+        }
+
+        .rights-card-desc {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            line-height: 1.4;
+        }
+
+        /* Testimonials Section */
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 16px;
+        }
+
+        .testimonial-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 18px;
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            transition: var(--transition-smooth);
+        }
+
+        .testimonial-user {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .testimonial-avatar {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: var(--border-color);
+            display: grid;
+            place-items: center;
+            font-weight: 700;
+            color: var(--cyan);
+            border: 1px solid rgba(6, 182, 212, 0.3);
+        }
+
+        .testimonial-meta {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .testimonial-name {
+            font-weight: 700;
+            color: #FFFFFF;
+            font-size: 0.95rem;
+        }
+
+        .testimonial-role {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+        }
+
+        .testimonial-rating {
+            display: flex;
+            gap: 3px;
+            color: #FBBF24;
+            font-size: 0.85rem;
+        }
+
+        .testimonial-text {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            line-height: 1.5;
+            font-style: italic;
+        }
+
+        /* Accordion FAQ CSS */
+        .faq-wrapper {
+            max-width: 800px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .faq-item {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 14px;
+            overflow: hidden;
+            transition: var(--transition-smooth);
+        }
+
+        .faq-header {
+            width: 100%;
+            padding: 18px;
+            background: none;
+            border: none;
+            text-align: left;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            font-family: var(--font-family);
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: #FFFFFF;
+            transition: var(--transition-smooth);
+            gap: 12px;
+            min-height: 52px;
+        }
+
+        .faq-header:hover {
+            color: var(--cyan);
+        }
+
+        .faq-icon {
+            width: 20px;
+            height: 20px;
+            flex-shrink: 0;
+            transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+            color: var(--text-secondary);
+        }
+
+        .faq-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s cubic-bezier(0.16, 1, 0.3, 1), padding 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            padding: 0 18px;
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            line-height: 1.5;
+            border-top: 1px solid transparent;
+        }
+
+        /* Active Accordion State */
+        .faq-item--active {
+            border-color: rgba(124, 58, 237, 0.4);
+        }
+
+        .faq-item--active .faq-header {
+            color: var(--cyan);
+        }
+
+        .faq-item--active .faq-icon {
+            transform: rotate(180deg);
+            color: var(--cyan);
+        }
+
+        .faq-item--active .faq-content {
+            padding-bottom: 18px;
+            border-color: rgba(255, 255, 255, 0.04);
+        }
+
+        /* Pricing Section */
+        .pricing-card {
+            background: rgba(19, 21, 32, 0.55);
+            border: 1px solid rgba(124, 58, 237, 0.3);
+            border-radius: 24px;
+            padding: 32px 20px;
+            max-width: 550px;
+            margin: 0 auto;
+            text-align: center;
+            box-shadow: 0 30px 60px rgba(124, 58, 237, 0.1), inset 0 1px 1px rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            position: relative;
+            overflow: hidden;
+            transition: var(--transition-smooth);
+        }
+
+        .pricing-card:hover {
+            border-color: rgba(6, 182, 212, 0.5);
+            box-shadow: 0 35px 70px rgba(6, 182, 212, 0.12), inset 0 1px 1px rgba(255, 255, 255, 0.1);
+        }
+
+        .pricing-header {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-bottom: 24px;
+        }
+
+        .pricing-tag {
+            align-self: center;
+            background: linear-gradient(135deg, var(--neon-purple), var(--cyan));
+            color: #FFFFFF;
+            font-size: 0.7rem;
+            font-weight: 800;
+            padding: 4px 12px;
+            border-radius: 50px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .price-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: baseline;
+            gap: 8px;
+        }
+
+        .price-current {
+            font-size: 3.5rem;
+            font-weight: 800;
+            color: #FFFFFF;
+            line-height: 1;
+        }
+
+        .price-original {
+            font-size: 1.25rem;
+            color: var(--text-muted);
+            text-decoration: line-through;
+        }
+
+        .pricing-features {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-bottom: 32px;
+            text-align: left;
+            background: rgba(0, 0, 0, 0.2);
+            padding: 16px;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+        }
+
+        .pricing-feature {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        .pricing-feature svg {
+            color: var(--emerald);
+            flex-shrink: 0;
+            width: 16px;
+            height: 16px;
+            margin-top: 2px;
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            /* Repositioned to standard right side since WhatsApp button is removed */
+            width: 44px;
+            height: 44px;
+            background: rgba(19, 21, 32, 0.85);
+            border: 1px solid var(--border-color);
+            color: #FFFFFF;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            cursor: pointer;
+            z-index: 998;
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition-smooth);
+            backdrop-filter: blur(10px);
+        }
+
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .back-to-top:hover {
+            background: var(--neon-purple);
+            border-color: var(--neon-purple);
+            transform: translateY(-3px);
+            box-shadow: 0 4px 12px var(--neon-purple-glow);
+        }
+
+        /* Footer */
+        .footer {
+            background: #06070A;
+            border-top: 1px solid var(--border-color);
+            padding: 60px 0 30px 0;
+            position: relative;
+            z-index: 10;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 32px;
+            margin-bottom: 40px;
+        }
+
+        .footer-brand {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .footer-desc {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            max-width: 320px;
+            line-height: 1.4;
+        }
+
+        .footer-heading {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #FFFFFF;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        .footer-links {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            list-style: none;
+        }
+
+        .footer-link {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.85rem;
+            transition: var(--transition-smooth);
+        }
+
+        .footer-link:hover {
+            color: var(--cyan);
+        }
+
+        /* Meta Ads Compliance & Earnings Disclaimer Styles */
+        .compliance-wrapper {
+            border-top: 1px solid var(--border-color);
+            padding-top: 32px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .disclaimer-box {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            line-height: 1.5;
+            text-align: justify;
+        }
+
+        .footer-bottom {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            padding-top: 24px;
+            border-top: 1px solid rgba(255, 255, 255, 0.04);
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            text-align: center;
+        }
+
+        /* Reveal Animation Utility */
+        .reveal-element {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.8s ease, transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .reveal-element.revealed {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* RESPONSIVE MEDIA QUERIES (Upward scaling from Mobile First) */
+
+        /* 480px and up (Wide Mobile / Phablets) */
+        @media (min-width: 480px) {
+            html {
+                font-size: 16px;
+            }
+
+            .hero-title {
+                font-size: 2.4rem;
+            }
+
+            .hero-actions {
+                flex-direction: row;
+                justify-content: center;
+            }
+
+            .hero-actions .btn {
+                width: auto;
+            }
+
+            .value-box {
+                padding: 32px;
+            }
+
+            .calc-results {
+                padding: 32px;
+            }
+
+            .pricing-card {
+                padding: 40px 32px;
+            }
+        }
+
+        /* 768px and up (Tablets) */
+        @media (min-width: 768px) {
+            .hero {
+                padding: 130px 0 60px 0;
+            }
+
+            .hero-title {
+                font-size: 3rem;
+                max-width: 680px;
+            }
+
+            .trust-wrapper {
+                flex-direction: row;
+                justify-content: space-between;
+                text-align: left;
+            }
+
+            .trust-benefits {
+                flex-direction: row;
+                gap: 20px;
+            }
+
+            .carousel-btn {
+                display: grid;
+                /* Reveal navigation arrows on tablet */
+            }
+
+            .feature-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+
+            .value-box {
+                flex-direction: row;
+                align-items: center;
+                gap: 40px;
+            }
+
+            .value-left,
+            .value-right {
+                flex: 1;
+            }
+
+            .calculator-grid {
+                flex-direction: row;
+                align-items: stretch;
+                padding: 32px;
+            }
+
+            .calc-inputs,
+            .calc-results {
+                flex: 1;
+            }
+
+            .calc-results {
+                padding: 40px;
+            }
+
+            .audience-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+
+            .rights-right {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+
+            .testimonials-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+
+            .footer-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .footer-bottom {
+                flex-direction: row;
+                justify-content: space-between;
+                text-align: left;
+            }
+        }
+
+        /* 1024px and up (Desktops / Laptops) */
+        @media (min-width: 1024px) {
+            .hero {
+                display: grid;
+                grid-template-columns: 1.2fr 1fr;
+                gap: 60px;
+                text-align: left;
+                align-items: center;
+                padding: 160px 0 80px 0;
+            }
+
+            .hero-content {
+                align-items: flex-start;
+            }
+
+            .hero-title {
+                font-size: 3.5rem;
+                line-height: 1.15;
+            }
+
+            .hero-subtitle {
+                margin: 0;
+            }
+
+            .feature-grid {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 24px;
+            }
+
+            .testimonials-grid {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 24px;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1.5fr repeat(3, 1fr);
+                gap: 40px;
+            }
+
+            .rights-box {
+                grid-template-columns: 1fr 1.2fr;
+                padding: 40px;
+                gap: 40px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Ambient Gradient Blobs for Visual Depth -->
+    <div class="ambient-blobs" aria-hidden="true">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <!-- SECTION 1: Sticky Navigation -->
+    <header class="header" id="mainHeader">
+        <div class="container">
+            <nav class="nav-wrapper" aria-label="Main Navigation">
+                <a href="#" class="logo" aria-label="GravityTools Home">
+                    <div class="logo-symbol">G</div>
+                    <span class="logo-text">GravityTools</span>
+                </a>
+                <a href="https://superprofile.bio/vp/toolswebsite" class="btn btn-primary"
+                    aria-label="Buy GravityTools Script for ₹299" target="_blank" rel="noopener noreferrer">
+                    Buy Script ₹299
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- MAIN BODY -->
+    <main>
+        <!-- SECTION 2: Hero Section -->
+        <section class="container hero" id="home">
+            <div class="hero-content">
+                <div class="badge" aria-label="Live Demo Available Status">
+                    <span class="badge-dot" aria-hidden="true"></span>
+                    140+ Fully Tested Tools Ready
+                </div>
+                <h1 class="hero-title">
+                    Own a Premium Tools Website Like <span>Calculator.net</span> — Launch in 10 Minutes & Keep 100% of
+                    the Profits
+                </h1>
+                <p class="hero-subtitle">
+                    Earn highly profitable passive income through Google AdSense, affiliate banner advertisements, and
+                    custom client projects with absolute ease.
+                </p>
+                <div class="hero-actions">
+                    <a href="#pricing" class="btn btn-primary" aria-label="Get instant access to GravityTools">
+                        Get Instant Access
+                    </a>
+                    <a href="#demo" class="btn btn-secondary" aria-label="View interactive screenshots of GravityTools">
+                        View Demo Screenshots
+                    </a>
+                </div>
+            </div>
+            <div class="hero-illustration">
+                <div class="glass-mockup">
+                    <div class="mockup-header" aria-hidden="true">
+                        <div class="mockup-dots">
+                            <span class="mockup-dot"></span>
+                            <span class="mockup-dot"></span>
+                            <span class="mockup-dot"></span>
+                        </div>
+                        <div class="mockup-url">https://yourtoolsite.com/dashboard</div>
+                        <div></div>
+                    </div>
+                    <div class="mockup-body">
+                        <div class="mockup-preview-box">
+                            <div class="mockup-tool-card">
+                                <div class="mockup-tool-icon">🛠</div>
+                                <div class="mockup-tool-info">
+                                    <div class="mockup-tool-title">Scientific Calculator Utility</div>
+                                    <div class="mockup-tool-desc">Fast, mathematically accurate JS computations</div>
+                                </div>
+                                <span class="mockup-badge">AdSense Ready</span>
+                            </div>
+                            <div class="mockup-tool-card">
+                                <div class="mockup-tool-icon">📈</div>
+                                <div class="mockup-tool-info">
+                                    <div class="mockup-tool-title">SEO Keyword Analyzer</div>
+                                    <div class="mockup-tool-desc">Extracts meta info and ranks tags in real-time</div>
+                                </div>
+                                <span class="mockup-badge">High Traffic</span>
+                            </div>
+                            <div class="mockup-tool-card">
+                                <div class="mockup-tool-icon">🔒</div>
+                                <div class="mockup-tool-info">
+                                    <div class="mockup-tool-title">SHA-256 Hash Generator</div>
+                                    <div class="mockup-tool-desc">Secure client-side cryptography generator</div>
+                                </div>
+                                <span class="mockup-badge">Premium UI</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3: Trust Bar Section -->
+        <section class="trust-bar" aria-label="Trust and Payment Integrations">
+            <div class="container trust-wrapper">
+                <div class="trust-label">SECURE PAYMENTS VIA UPI & BANKING</div>
+                <div class="trust-gateways">
+                    <div class="gateway-pill">Google Pay</div>
+                    <div class="gateway-pill">PhonePe</div>
+                    <div class="gateway-pill">Paytm</div>
+                    <div class="gateway-pill">BHIM UPI</div>
+                </div>
+                <div class="trust-benefits">
+                    <div class="benefit-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                        100% Lifetime Access
+                    </div>
+                    <div class="benefit-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                        Commercial License
+                    </div>
+                    <div class="benefit-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                        No Monthly Fees
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 4: Interactive Screenshot Carousel -->
+        <section class="section container reveal-element" id="demo">
+            <div class="section-header">
+                <h2 class="section-title">Explore our Premium <span>Responsive Layout</span></h2>
+                <p class="section-subtitle">Take a visual tour through our lightweight, ready-to-deploy user interfaces.
+                    Swipe left/right on mobile or use navigation controls.</p>
+            </div>
+
+            <div class="carousel-container" aria-label="Screenshot Carousel Gallery">
+                <div class="carousel-track-wrapper">
+                    <div class="carousel-track" id="carouselTrack">
+                        <!-- Slide 1 -->
+                        <div class="carousel-slide">
+                            <img data-src="https://lh3.googleusercontent.com/d/16oSYvo_AAh2SeWCmJoa07Q99pMRYiA2m"
+                                alt="GravityTools Home Interface Dashboard Demo" class="lazy-image">
+                            <div class="carousel-overlay">
+                                <button class="btn btn-secondary open-lightbox"
+                                    data-img="https://lh3.googleusercontent.com/d/16oSYvo_AAh2SeWCmJoa07Q99pMRYiA2m">🔍
+                                    Expand</button>
+                            </div>
+                        </div>
+                        <!-- Slide 2 -->
+                        <div class="carousel-slide">
+                            <img data-src="https://lh3.googleusercontent.com/d/1y3xRjQ-io2crWhtdlHf1azTHfhQqE5dP"
+                                alt="Developer Tools Overview Grid Interface" class="lazy-image">
+                            <div class="carousel-overlay">
+                                <button class="btn btn-secondary open-lightbox"
+                                    data-img="https://lh3.googleusercontent.com/d/1y3xRjQ-io2crWhtdlHf1azTHfhQqE5dP">🔍
+                                    Expand</button>
+                            </div>
+                        </div>
+                        <!-- Slide 3 -->
+                        <div class="carousel-slide">
+                            <img data-src="https://lh3.googleusercontent.com/d/17hSeXRqA1jL3vLErmqZ1DXXA1RyQBHwc"
+                                alt="Mathematical Calculations Module UI View" class="lazy-image">
+                            <div class="carousel-overlay">
+                                <button class="btn btn-secondary open-lightbox"
+                                    data-img="https://lh3.googleusercontent.com/d/17hSeXRqA1jL3vLErmqZ1DXXA1RyQBHwc">🔍
+                                    Expand</button>
+                            </div>
+                        </div>
+                        <!-- Slide 4 -->
+                        <div class="carousel-slide">
+                            <img data-src="https://lh3.googleusercontent.com/d/1C1EVw5EukPov4hsef_FOqMaSV0IXsbVw"
+                                alt="SEO Analysis Utility Script Output Panel" class="lazy-image">
+                            <div class="carousel-overlay">
+                                <button class="btn btn-secondary open-lightbox"
+                                    data-img="https://lh3.googleusercontent.com/d/1C1EVw5EukPov4hsef_FOqMaSV0IXsbVw">🔍
+                                    Expand</button>
+                            </div>
+                        </div>
+                        <!-- Slide 5 -->
+                        <div class="carousel-slide">
+                            <img data-src="https://lh3.googleusercontent.com/d/1ffoNfWbxJ6LIpzrjLkcjFRZjnOENy5u2"
+                                alt="Password Strength Metric Tool Dashboard Visualizer" class="lazy-image">
+                            <div class="carousel-overlay">
+                                <button class="btn btn-secondary open-lightbox"
+                                    data-img="https://lh3.googleusercontent.com/d/1ffoNfWbxJ6LIpzrjLkcjFRZjnOENy5u2">🔍
+                                    Expand</button>
+                            </div>
+                        </div>
+                        <!-- Slide 6 -->
+                        <div class="carousel-slide">
+                            <img data-src="https://lh3.googleusercontent.com/d/1u7lhoopsuVBn4Wjj5bdTcK4GzAB2MJuR"
+                                alt="Text Editing Formatting Utility Tools Layout" class="lazy-image">
+                            <div class="carousel-overlay">
+                                <button class="btn btn-secondary open-lightbox"
+                                    data-img="https://lh3.googleusercontent.com/d/1u7lhoopsuVBn4Wjj5bdTcK4GzAB2MJuR">🔍
+                                    Expand</button>
+                            </div>
+                        </div>
+                        <!-- Slide 7 -->
+                        <div class="carousel-slide">
+                            <img data-src="https://lh3.googleusercontent.com/d/12-5vUXqOpkySgr3q_392pk-Cd4O-YoZK"
+                                alt="Conversion Script Units Dashboard Panel" class="lazy-image">
+                            <div class="carousel-overlay">
+                                <button class="btn btn-secondary open-lightbox"
+                                    data-img="https://lh3.googleusercontent.com/d/12-5vUXqOpkySgr3q_392pk-Cd4O-YoZK">🔍
+                                    Expand</button>
+                            </div>
+                        </div>
+                        <!-- Slide 8 -->
+                        <div class="carousel-slide">
+                            <img data-src="https://lh3.googleusercontent.com/d/1TTxIXz6GS2o8y1gqF-7EgE_6J7pGff23"
+                                alt="Premium Dashboard Tools Viewer" class="lazy-image">
+                            <div class="carousel-overlay">
+                                <button class="btn btn-secondary open-lightbox"
+                                    data-img="https://lh3.googleusercontent.com/d/1TTxIXz6GS2o8y1gqF-7EgE_6J7pGff23">🔍
+                                    Expand</button>
+                            </div>
+                        </div>
+                        <!-- Slide 9 -->
+                        <div class="carousel-slide">
+                            <img data-src="https://lh3.googleusercontent.com/d/17fMW_jLiUA9am8HgLaasA4yP7Y6ROv4x"
+                                alt="Additional Premium Utility Dashboard" class="lazy-image">
+                            <div class="carousel-overlay">
+                                <button class="btn btn-secondary open-lightbox"
+                                    data-img="https://lh3.googleusercontent.com/d/17fMW_jLiUA9am8HgLaasA4yP7Y6ROv4x">🔍
+                                    Expand</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation Controls -->
+                <button class="carousel-btn carousel-btn--prev" id="carouselPrev" aria-label="Previous Slide">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2.5">
+                        <polyline points="15 18 9 12 15 6"></polyline>
+                    </svg>
+                </button>
+                <button class="carousel-btn carousel-btn--next" id="carouselNext" aria-label="Next Slide">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2.5">
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                </button>
+
+                <!-- Pagination Indicators -->
+                <div class="carousel-pagination" id="carouselPagination"></div>
+            </div>
+        </section>
+
+        <!-- Lightbox Gallery Container -->
+        <div class="lightbox" id="lightboxModal" role="dialog" aria-modal="true"
+            aria-label="Image Fullscreen Lightbox View">
+            <div class="lightbox-content">
+                <button class="lightbox-close" id="lightboxClose" aria-label="Close Fullscreen View">×</button>
+                <img src="" alt="" class="lightbox-img" id="lightboxImg">
+            </div>
+        </div>
+
+        <!-- SECTION 5: Feature Grid -->
+        <section class="section container reveal-element" id="features">
+            <div class="section-header">
+                <h2 class="section-title">Designed for Ultimate <span>Scale & Profits</span></h2>
+                <p class="section-subtitle">GravityTools includes top-tier developer features built completely on
+                    semantic structural markup.</p>
+            </div>
+
+            <div class="feature-grid">
+                <!-- Card 1 -->
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper icon-purple">🛠</div>
+                    <h3 class="feature-card-title">140+ Complete Tools</h3>
+                    <p class="feature-card-desc">No missing files. Get instant, operational access to advanced
+                        mathematical calculators, SEO generators, validation checkers, text compressors, and converters.
+                    </p>
+                </div>
+                <!-- Card 2 -->
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper icon-cyan">🌙</div>
+                    <h3 class="feature-card-title">Native Dark Mode</h3>
+                    <p class="feature-card-desc">A premium dark luxury experience that users naturally spend more time
+                        on, maximizing user retention metrics and your overall AdSense impressions.</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper icon-emerald">📊</div>
+                    <h3 class="feature-card-title">Scientific Calculator</h3>
+                    <p class="feature-card-desc">Packed with responsive trigonometric and arithmetic functions, built
+                        precisely on secure mathematical accuracy models.</p>
+                </div>
+                <!-- Card 4 -->
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper icon-purple">🔍</div>
+                    <h3 class="feature-card-title">SEO Optimized Out of Box</h3>
+                    <p class="feature-card-desc">Fully optimized layout headers, structural code blocks, and fast page
+                        speeds. Gain massive organic search engine ranking easily.</p>
+                </div>
+                <!-- Card 5 -->
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper icon-cyan">📱</div>
+                    <h3 class="feature-card-title">100% Fully Responsive</h3>
+                    <p class="feature-card-desc">Designed with meticulous pixel perfection across all devices, from
+                        compact mobile displays to desktop layout viewports.</p>
+                </div>
+                <!-- Card 6 -->
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper icon-emerald">⚡</div>
+                    <h3 class="feature-card-title">Ultimate Fast Performance</h3>
+                    <p class="feature-card-desc">Clean, vanilla ES6 Javascript logic without bulky libraries. Ensures
+                        immediate execution with virtually zero load delay on connections.</p>
+                </div>
+                <!-- Card 7 -->
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper icon-purple">💼</div>
+                    <h3 class="feature-card-title">Commercial Resell License</h3>
+                    <p class="feature-card-desc">Complete license rights to deploy, brand, modify, resell, or distribute
+                        client utility projects. You retain 100% of all revenues earned.</p>
+                </div>
+                <!-- Card 8 -->
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper icon-cyan">🚀</div>
+                    <h3 class="feature-card-title">Super Easy Deployment</h3>
+                    <p class="feature-card-desc">No intricate databases or backend requirements. Simply host the
+                        structured static folder files on Netlify, Vercel, or standard cPanel.</p>
+                </div>
+                <!-- Card 9 -->
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper icon-emerald">✨</div>
+                    <h3 class="feature-card-title">Modern Glassmorphism UI</h3>
+                    <p class="feature-card-desc">A premium interface featuring glassmorphic blurs, responsive hover
+                        border shines, and luxury typography styles.</p>
+                </div>
+                <!-- Card 10 -->
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper icon-purple">📈</div>
+                    <h3 class="feature-card-title">Integrated Charts API</h3>
+                    <p class="feature-card-desc">Generates professional SVG visual graphs on numerical outputs without
+                        third-party render delays.</p>
+                </div>
+                <!-- Card 11 -->
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper icon-cyan">🛡</div>
+                    <h3 class="feature-card-title">Clean Validation Checks</h3>
+                    <p class="feature-card-desc">Strict syntax input filtering to protect layouts and client processing
+                        systems from unexpected errors.</p>
+                </div>
+                <!-- Card 12 -->
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper icon-emerald">🔄</div>
+                    <h3 class="feature-card-title">Lifetime Code Updates</h3>
+                    <p class="feature-card-desc">Access all future utility additions, code refactors, and optimizations
+                        directly from our drive without monthly support tickets.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 6: Value Comparison Section -->
+        <section class="section container reveal-element" id="value">
+            <div class="section-header">
+                <h2 class="section-title">Zero Custom Development Costs</h2>
+                <p class="section-subtitle">Avoid spending thousands of dollars hiring developers and designers. Launch
+                    a ready-made digital assets business overnight.</p>
+            </div>
+
+            <div class="value-box">
+                <div class="value-left">
+                    <h3 class="feature-card-title">Typical Launch Costs vs GravityTools</h3>
+                    <div class="value-list">
+                        <div class="value-item">
+                            <span>Senior Full Stack Developer</span>
+                            <span class="item-cost">₹40,000</span>
+                        </div>
+                        <div class="value-item">
+                            <span>UI/UX Interface Designer</span>
+                            <span class="item-cost">₹15,000</span>
+                        </div>
+                        <div class="value-item">
+                            <span>QA & Cross-Device Tester</span>
+                            <span class="item-cost">₹20,000</span>
+                        </div>
+                        <div class="value-item value-item--total">
+                            <span>Total Estimated Launch Cost</span>
+                            <span class="item-cost">₹75,000</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="value-right">
+                    <span class="value-badge" aria-hidden="true">Limited</span>
+                    <h4 class="value-right-title">GravityTools Script Access</h4>
+                    <div class="value-price">₹299 <span>/ one-time</span></div>
+                    <p class="value-note">Deploy on unlimited domain licenses under your commercial rights package. Keep
+                        all earnings.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 7: Profit Calculator Section -->
+        <section class="section container reveal-element" id="calculator">
+            <div class="section-header">
+                <h2 class="section-title">Evaluate Your <span>Monthly Income Potential</span></h2>
+                <p class="section-subtitle">Interact with our calculator to see estimated earnings from passive AdSense
+                    traffic. Utility sites enjoy extremely high pageview counts.</p>
+            </div>
+
+            <div class="calculator-grid">
+                <div class="calc-inputs">
+                    <!-- Input Group 1 -->
+                    <div class="calc-group">
+                        <div class="calc-label-wrapper">
+                            <label for="calcVisitors" class="calc-label">Daily Unique Visitors</label>
+                            <span class="calc-val" id="valVisitors">10,000</span>
+                        </div>
+                        <input type="range" id="calcVisitors" class="calc-slider" min="1000" max="100000" step="1000"
+                            value="10000" aria-valuemin="1000" aria-valuemax="100000" aria-valuenow="10000">
+                    </div>
+                    <!-- Input Group 2 -->
+                    <div class="calc-group">
+                        <div class="calc-label-wrapper">
+                            <label for="calcCTR" class="calc-label">Ad Click-Through Rate (CTR)</label>
+                            <span class="calc-val" id="valCTR">2.5%</span>
+                        </div>
+                        <input type="range" id="calcCTR" class="calc-slider" min="0.5" max="10" step="0.1" value="2.5"
+                            aria-valuemin="0.5" aria-valuemax="10" aria-valuenow="2.5">
+                    </div>
+                    <!-- Input Group 3 -->
+                    <div class="calc-group">
+                        <div class="calc-label-wrapper">
+                            <label for="calcCPC" class="calc-label">Average Cost-Per-Click (CPC)</label>
+                            <span class="calc-val" id="valCPC">₹8.00</span>
+                        </div>
+                        <input type="range" id="calcCPC" class="calc-slider" min="1" max="50" step="1" value="8"
+                            aria-valuemin="1" aria-valuemax="50" aria-valuenow="8">
+                    </div>
+                </div>
+                <div class="calc-results">
+                    <div class="calc-results-title">Estimated Monthly Revenue</div>
+                    <div class="calc-results-amount" id="calcTotalIncome" aria-live="polite">₹60,000</div>
+                    <p class="calc-results-desc">Calculated as: <em>Daily Visitors × CTR (%) × CPC × 30 days</em>. Real
+                        earnings vary based on actual geographic traffic distribution and niche interest factors.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 8: Who Is This For Section -->
+        <section class="section container reveal-element" id="audience">
+            <div class="section-header">
+                <h2 class="section-title">Designed For <span>Aspirants & Creators</span></h2>
+                <p class="section-subtitle">Empowering digital side hustlers and professionals to launch automated,
+                    self-sustaining high-traffic online assets.</p>
+            </div>
+
+            <div class="audience-grid">
+                <!-- Card 1 -->
+                <div class="audience-card">
+                    <div class="audience-num">01</div>
+                    <div class="audience-content">
+                        <h3 class="audience-title">Indian Entrepreneurs</h3>
+                        <p class="audience-desc">Establish a low-overhead, high-margin, scalable software utility
+                            business tailored to local search volumes and traffic needs.</p>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="audience-card">
+                    <div class="audience-num">02</div>
+                    <div class="audience-content">
+                        <h3 class="audience-title">Students & Side-Hustlers</h3>
+                        <p class="audience-desc">Quickly construct passive income models. Learn the ropes of hosting
+                            static websites and optimizing AdSense formats with real-world utility assets.</p>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="audience-card">
+                    <div class="audience-num">03</div>
+                    <div class="audience-content">
+                        <h3 class="audience-title">Freelancers & Agencies</h3>
+                        <p class="audience-desc">Deploy quick web utility micro-tools for local business clients or
+                            packaged sites as complete value-added monthly projects.</p>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="audience-card">
+                    <div class="audience-num">04</div>
+                    <div class="audience-content">
+                        <h3 class="audience-title">Web Developers</h3>
+                        <p class="audience-desc">Avoid starting utility coding from scratch. Use this highly clean,
+                            standards-compliant Javascript template framework for your own application ideas.</p>
+                    </div>
+                </div>
+                <!-- Card 5 -->
+                <div class="audience-card">
+                    <div class="audience-num">05</div>
+                    <div class="audience-content">
+                        <h3 class="audience-title">Digital Marketers</h3>
+                        <p class="audience-desc">Generate endless high-intent, targeted organic traffic by utilizing SEO
+                            ranking utility tools as reliable landing-page magnets.</p>
+                    </div>
+                </div>
+                <!-- Card 6 -->
+                <div class="audience-card">
+                    <div class="audience-num">06</div>
+                    <div class="audience-content">
+                        <h3 class="audience-title">First-Time Owners</h3>
+                        <p class="audience-desc">Launch your first web venture with absolute confidence. No database
+                            hosting setup headaches, completely simple deployment.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 9: Commercial Rights Section -->
+        <section class="section container reveal-element" id="commercial-rights">
+            <div class="rights-box">
+                <div class="rights-left">
+                    <h2 class="rights-title">Complete <span>Resell Rights</span> Built Into Your Purchase License</h2>
+                    <p class="section-subtitle">No operational restrictions. GravityTools comes standard with a robust
+                        developer and commercial distribution license designed to scale your business.</p>
+                </div>
+                <div class="rights-right">
+                    <div class="rights-card">
+                        <div class="rights-icon" aria-hidden="true">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3 class="rights-card-title">100% Code Ownership</h3>
+                        <p class="rights-card-desc">No encrypted code. Enjoy direct access to modify structural styling
+                            formats on all components.</p>
+                    </div>
+                    <div class="rights-card">
+                        <div class="rights-icon" aria-hidden="true">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                                <polyline points="2 17 12 22 22 17"></polyline>
+                                <polyline points="2 12 12 17 22 12"></polyline>
+                            </svg>
+                        </div>
+                        <h3 class="rights-card-title">Unlimited Domains</h3>
+                        <p class="rights-card-desc">Deploy the full package or individual standalone scripts across as
+                            many personal or client host domains as you choose.</p>
+                    </div>
+                    <div class="rights-card">
+                        <div class="rights-icon" aria-hidden="true">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="rights-card-title">Completely Rebrand</h3>
+                        <p class="rights-card-desc">Modify tool names, colors, patterns, and logos to run completely
+                            independent, customized online SaaS tools.</p>
+                    </div>
+                    <div class="rights-card">
+                        <div class="rights-icon" aria-hidden="true">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <line x1="12" y1="1" x2="12" y2="23"></line>
+                                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                            </svg>
+                        </div>
+                        <h3 class="rights-card-title">Keep 100% Profits</h3>
+                        <p class="rights-card-desc">No commission rates, platform maintenance costs, or transaction
+                            deductions. Sell scripts directly or scale AdSense revenues cleanly.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 10: Testimonials Section -->
+        <section class="section container reveal-element" id="testimonials">
+            <div class="section-header">
+                <h2 class="section-title">Endorsed By <span>Digital Builders</span></h2>
+                <p class="section-subtitle">Real feedback from developers and entrepreneurs who deployed and scaled
+                    micro-tools setups with GravityTools.</p>
+            </div>
+
+            <div class="testimonials-grid">
+                <!-- Card 1 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-user">
+                        <div class="testimonial-avatar">AK</div>
+                        <div class="testimonial-meta">
+                            <span class="testimonial-name">Aravind Krishnan</span>
+                            <span class="testimonial-role">Digital Side Hustler</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating" aria-label="5 Star Rating">★★★★★</div>
+                    <p class="testimonial-text">"Using GravityTools, I launched my calculator utility website in under
+                        an hour on Netlify. It already records stable organic traffic from students looking for math
+                        converters. The codebase is incredibly fast and highly optimized."</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-user">
+                        <div class="testimonial-avatar">SP</div>
+                        <div class="testimonial-meta">
+                            <span class="testimonial-name">Sneha Patil</span>
+                            <span class="testimonial-role">Freelance Web Developer</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating" aria-label="5 Star Rating">★★★★★</div>
+                    <p class="testimonial-text">"Deploying micro-tools is a brilliant strategy for landing pages.
+                        GravityTools provides outstanding structural scripts. My client portfolio projects now load 100%
+                        faster with absolutely zero extra hosting costs."</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-user">
+                        <div class="testimonial-avatar">RM</div>
+                        <div class="testimonial-meta">
+                            <span class="testimonial-name">Rohan Mehta</span>
+                            <span class="testimonial-role">SEO Agency Founder</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating" aria-label="5 Star Rating">★★★★★</div>
+                    <p class="testimonial-text">"These static pages are brilliant SEO tools. The HTML is deeply
+                        structured and semantic. I modified the CSS variables easily, rebranded the package, and
+                        received AdSense approval within two weeks."</p>
+                </div>
+                <!-- Card 4 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-user">
+                        <div class="testimonial-avatar">DV</div>
+                        <div class="testimonial-meta">
+                            <span class="testimonial-name">Deepak Verma</span>
+                            <span class="testimonial-role">Micro-SaaS Maker</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating" aria-label="5 Star Rating">★★★★★</div>
+                    <p class="testimonial-text">"GravityTools is outstanding. Handcrafted JS utilities run fully
+                        client-side. There is no complex database schema to maintain, drastically reducing hosting
+                        costs."</p>
+                </div>
+                <!-- Card 5 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-user">
+                        <div class="testimonial-avatar">NM</div>
+                        <div class="testimonial-meta">
+                            <span class="testimonial-name">Neha Mishra</span>
+                            <span class="testimonial-role">Affiliate Marketer</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating" aria-label="5 Star Rating">★★★★★</div>
+                    <p class="testimonial-text">"GravityTools is incredibly user-friendly. Adding banner advertisement
+                        assets directly in the designated sections takes seconds. Excellent ROI."</p>
+                </div>
+                <!-- Card 6 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-user">
+                        <div class="testimonial-avatar">AG</div>
+                        <div class="testimonial-meta">
+                            <span class="testimonial-name">Anshul Gupta</span>
+                            <span class="testimonial-role">Computer Science Student</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating" aria-label="5 Star Rating">★★★★★</div>
+                    <p class="testimonial-text">"As a student side-project, GravityTools is absolutely perfect. Clean
+                        vanilla JS logic without framework dependencies helps me customize utility elements
+                        effortlessly."</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 11: FAQ Section -->
+        <section class="section container reveal-element" id="faq">
+            <div class="section-header">
+                <h2 class="section-title">Got Questions? <span>We Got Answers</span></h2>
+                <p class="section-subtitle">Find comprehensive operational and licensing answers to maximize your launch
+                    success.</p>
+            </div>
+
+            <div class="faq-wrapper">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item">
+                    <button class="faq-header" aria-expanded="false" aria-controls="faq-ans-1">
+                        What exactly is GravityTools?
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="faq-content" id="faq-ans-1">
+                        <p>GravityTools is a meticulously optimized collection of 140+ premium web utility tools, units,
+                            converters, and generators built with vanilla HTML5, CSS3, and modern ES6 JavaScript. The
+                            entire codebase is static, which means you can host it anywhere for next to nothing.</p>
+                    </div>
+                </div>
+                <!-- FAQ Item 2 -->
+                <div class="faq-item">
+                    <button class="faq-header" aria-expanded="false" aria-controls="faq-ans-2">
+                        How can I monetize this website script?
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="faq-content" id="faq-ans-2">
+                        <p>You can seamlessly place Google AdSense script, Media.net tags, or proprietary affiliate
+                            banners in our neatly commented semantic containers. Because utility tools naturally drive
+                            high repeat usage, pageview counts climb, driving ad impressions and CTR.</p>
+                    </div>
+                </div>
+                <!-- FAQ Item 3 -->
+                <div class="faq-item">
+                    <button class="faq-header" aria-expanded="false" aria-controls="faq-ans-3">
+                        Do I need database configuration setup?
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="faq-content" id="faq-ans-3">
+                        <p>No, there are no database dependencies. GravityTools is engineered entirely using client-side
+                            technologies. Simply copy the files over to any classic shared hosting panel, Vercel, or
+                            Netlify, and your site is instantly live.</p>
+                    </div>
+                </div>
+                <!-- FAQ Item 4 -->
+                <div class="faq-item">
+                    <button class="faq-header" aria-expanded="false" aria-controls="faq-ans-4">
+                        Is there a domain usage restriction limit?
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="faq-content" id="faq-ans-4">
+                        <p>None at all. The commercial license is entirely unlimited. You can host these tools across as
+                            many domains, directories, subdomains, and clients as you want under your one-time purchase.
+                        </p>
+                    </div>
+                </div>
+                <!-- FAQ Item 5 -->
+                <div class="faq-item">
+                    <button class="faq-header" aria-expanded="false" aria-controls="faq-ans-5">
+                        Can I rebrand the site with my own logos?
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="faq-content" id="faq-ans-5">
+                        <p>Yes. You own the clean CSS variables, structure, layouts, and assets. You are completely free
+                            to replace titles, brand names, color templates, and icons to build a unique experience.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 12: Pricing Section -->
+        <section class="section container reveal-element" id="pricing">
+            <div class="pricing-card">
+                <div class="pricing-header">
+                    <span class="pricing-tag">Special Commercial License Launch Offer</span>
+                    <h2 class="section-title" style="font-size: 2rem; margin-bottom: 8px;">Get Instant Access Today</h2>
+                    <div class="price-wrapper">
+                        <span class="price-original">₹1,999</span>
+                        <span class="price-current">₹299</span>
+                        <span style="color: var(--text-secondary); font-size: 0.95rem;">/ One-Time</span>
+                    </div>
+                    <p style="color: var(--text-muted); font-size: 0.8rem; margin-top: 8px;">Pay once. Complete lifetime
+                        code ownership with absolute zero monthly maintenance fees.</p>
+                </div>
+
+                <ul class="pricing-features" aria-label="Included product features">
+                    <li class="pricing-feature">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                            aria-hidden="true">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                        Complete, clean HTML/CSS/JS Source Code
+                    </li>
+                    <li class="pricing-feature">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                            aria-hidden="true">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                        140+ fully responsive online utilities
+                    </li>
+                    <li class="pricing-feature">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                            aria-hidden="true">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                        Unlimited commercial reselling license rights
+                    </li>
+                    <li class="pricing-feature">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                            aria-hidden="true">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                        Comprehensive layout setup guide
+                    </li>
+                    <li class="pricing-feature">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                            aria-hidden="true">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                        Secure AdSense placement placeholders
+                    </li>
+                    <li class="pricing-feature">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                            aria-hidden="true">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                        Lifetime downloads and version updates
+                    </li>
+                </ul>
+
+                <a href="https://superprofile.bio/vp/toolswebsite" class="btn btn-primary"
+                    style="width: 100%; font-size: 1.05rem; padding: 14px; text-decoration: none;"
+                    aria-label="Secure checkout and download GravityTools script package" target="_blank"
+                    rel="noopener noreferrer">
+                    Claim Script Ownership
+                </a>
+                <p
+                    style="color: var(--text-muted); font-size: 0.75rem; margin-top: 12px; display: flex; align-items: center; justify-content: center; gap: 6px;">
+                    🔒 Secure, instant digital download link delivered automatically to your email
+                </p>
+            </div>
+        </section>
+
+        <!-- Back to Top Trigger Button - Repositioned Standard Bottom Right -->
+        <button class="back-to-top" id="backToTop" aria-label="Back to top" title="Scroll to top">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="18 15 12 9 6 15"></polyline>
+            </svg>
+        </button>
+    </main>
+
+    <!-- SECTION 14: Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <div class="logo-symbol">G</div>
+                        <span class="logo-text">GravityTools</span>
+                    </a>
+                    <p class="footer-desc">Premium fully operational utility site scripts structured to generate
+                        continuous passive AdSense and direct web assets income stream channels.</p>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Legal Policy</h4>
+                    <ul class="footer-links">
+                        <li><a href="#privacy" class="footer-link">Privacy Policy</a></li>
+                        <li><a href="#terms" class="footer-link">Terms of Service</a></li>
+                        <li><a href="#refund" class="footer-link">Refund Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Product Details</h4>
+                    <ul class="footer-links">
+                        <li><a href="#features" class="footer-link">All 140+ Tools</a></li>
+                        <li><a href="#pricing" class="footer-link">Licensing Pricing</a></li>
+                        <li><a href="#demo" class="footer-link">Interactive Screenshot Demo</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Inquiries</h4>
+                    <ul class="footer-links">
+                        <li><a href="mailto:support@gravitytools.io" class="footer-link">support@gravitytools.io</a>
+                        </li>
+                        <li><a href="#calculator" class="footer-link">Profit Calculator Widget</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Meta Ads, Earnings & Legal Compliance Disclaimers -->
+            <div class="compliance-wrapper">
+                <div class="disclaimer-box">
+                    <strong>Earnings & Income Disclaimer:</strong> Running an online business successfully requires
+                    dedicated work, SEO expertise, content creation, advertising campaigns, and continuous web marketing
+                    operations. Any income examples or potential earnings presented on this website are estimations
+                    based on hypothetical user metrics. We do not promise, guarantee, or state that you will earn
+                    identical figures. Your individual success depends on factors like search engine algorithm updates,
+                    user traffic volumes, niches, geographic location, and marketing initiatives.
+                </div>
+                <div class="disclaimer-box">
+                    <strong>Meta Ads Platform Disclaimer:</strong> This website is completely independent and not
+                    connected to, endorsed by, or affiliated with Facebook, Meta Platforms, Inc., Google LLC, or any of
+                    their parent companies. Any reference to these platforms is strictly for context. "Facebook" and
+                    "Meta" are registered trademarks of Meta Platforms, Inc.
+                </div>
+                <div class="disclaimer-box">
+                    <strong>Commercial Resell License Terms:</strong> Purchase of the GravityTools website script
+                    package includes unlimited lifetime rights to customize, edit, and host the source code on
+                    user-owned domain licenses. Reselling rights allow compiling the code inside custom projects or
+                    client assets without revenue-sharing, but does not allow redistribution or resale of the core
+                    package on standard theme marketplaces as an independent competitor. All intellectual property
+                    remains registered under original author permissions.
+                </div>
+
+                <div class="footer-bottom">
+                    <p>&copy; 2026 GravityTools. Crafted for elite conversion rates and pixel performance. All Rights
+                        Reserved.</p>
+                    <p>Designed with absolute dark premium luxury SaaS principles.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            /* 1. Header Sticky Transitions */
+            const mainHeader = document.getElementById('mainHeader');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 40) {
+                    mainHeader.classList.add('header--scrolled');
+                } else {
+                    mainHeader.classList.remove('header--scrolled');
+                }
+            }, { passive: true });
+
+            /* 2. Scroll-spy Reveal Animations (Intersection Observer) */
+            const revealElements = document.querySelectorAll('.reveal-element');
+            const revealOptions = {
+                threshold: 0.05,
+                rootMargin: '0px 0px -30px 0px'
+            };
+
+            const revealObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('revealed');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, revealOptions);
+
+            revealElements.forEach(element => {
+                revealObserver.observe(element);
+            });
+
+            /* 3. Touch Gestures & Navigation Carousel Setup */
+            const track = document.getElementById('carouselTrack');
+            const slides = Array.from(track.children);
+            const prevBtn = document.getElementById('carouselPrev');
+            const nextBtn = document.getElementById('carouselNext');
+            const paginationContainer = document.getElementById('carouselPagination');
+
+            let currentIndex = 0;
+            let autoSlideInterval;
+            let startX = 0;
+            let currentX = 0;
+            let isDragging = false;
+
+            // Generate pagination dots
+            slides.forEach((_, idx) => {
+                const dot = document.createElement('button');
+                dot.classList.add('carousel-dot');
+                if (idx === 0) dot.classList.add('carousel-dot--active');
+                dot.setAttribute('aria-label', `Go to slide ${idx + 1}`);
+                dot.addEventListener('click', () => {
+                    goToSlide(idx);
+                    resetAutoSlide();
+                });
+                paginationContainer.appendChild(dot);
+            });
+
+            const dots = Array.from(paginationContainer.children);
+
+            // Lazy load images on demand or active slide proximity
+            function lazyLoadImage(slideIndex) {
+                const slide = slides[slideIndex];
+                if (!slide) return;
+                const img = slide.querySelector('.lazy-image');
+                if (img && !img.src) {
+                    img.src = img.getAttribute('data-src');
+                    img.onload = () => img.classList.add('loaded');
+                }
+            }
+
+            // Lazy load the first two slides immediately
+            lazyLoadImage(0);
+            lazyLoadImage(1);
+
+            function updateCarouselPosition() {
+                track.style.transform = `translateX(-${currentIndex * 100}%)`;
+                dots.forEach((dot, index) => {
+                    dot.classList.toggle('carousel-dot--active', index === currentIndex);
+                });
+                // Ensure upcoming slide is lazy-loaded
+                lazyLoadImage(currentIndex);
+                if (currentIndex + 1 < slides.length) lazyLoadImage(currentIndex + 1);
+            }
+
+            function goToSlide(index) {
+                currentIndex = (index + slides.length) % slides.length;
+                updateCarouselPosition();
+            }
+
+            function showNextSlide() {
+                goToSlide(currentIndex + 1);
+            }
+
+            function showPrevSlide() {
+                goToSlide(currentIndex - 1);
+            }
+
+            nextBtn.addEventListener('click', () => {
+                showNextSlide();
+                resetAutoSlide();
+            });
+
+            prevBtn.addEventListener('click', () => {
+                showPrevSlide();
+                resetAutoSlide();
+            });
+
+            // Auto-slide operations
+            function startAutoSlide() {
+                autoSlideInterval = setInterval(showNextSlide, 6000);
+            }
+
+            function resetAutoSlide() {
+                clearInterval(autoSlideInterval);
+                startAutoSlide();
+            }
+
+            startAutoSlide();
+
+            // Keyboard Arrow navigation for the carousel when focused
+            document.addEventListener('keydown', (e) => {
+                const demoSec = document.getElementById('demo');
+                const rect = demoSec.getBoundingClientRect();
+                const isVisible = rect.top < window.innerHeight && rect.bottom >= 0;
+
+                if (isVisible) {
+                    if (e.key === 'ArrowRight') {
+                        showNextSlide();
+                        resetAutoSlide();
+                    } else if (e.key === 'ArrowLeft') {
+                        showPrevSlide();
+                        resetAutoSlide();
+                    }
+                }
+            });
+
+            /* Touch/Swipe gesture support fully optimized for responsiveness */
+            track.addEventListener('touchstart', (e) => {
+                startX = e.touches[0].clientX;
+                isDragging = true;
+                clearInterval(autoSlideInterval);
+            }, { passive: true });
+
+            track.addEventListener('touchmove', (e) => {
+                if (!isDragging) return;
+                currentX = e.touches[0].clientX;
+            }, { passive: true });
+
+            track.addEventListener('touchend', () => {
+                if (!isDragging) return;
+                isDragging = false;
+                const diffX = startX - currentX;
+                if (Math.abs(diffX) > 40) { // Touch drag sensitivity threshold
+                    if (diffX > 0) {
+                        showNextSlide();
+                    } else {
+                        showPrevSlide();
+                    }
+                }
+                startAutoSlide();
+            }, { passive: true });
+
+            /* 4. Lightbox View Component */
+            const lightbox = document.getElementById('lightboxModal');
+            const lightboxImg = document.getElementById('lightboxImg');
+            const lightboxClose = document.getElementById('lightboxClose');
+            const openLightboxBtns = document.querySelectorAll('.open-lightbox');
+
+            openLightboxBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const imgSrc = btn.getAttribute('data-img');
+                    lightboxImg.src = imgSrc;
+                    lightbox.classList.add('active');
+                });
+            });
+
+            lightboxClose.addEventListener('click', closeLightbox);
+            lightbox.addEventListener('click', (e) => {
+                if (e.target === lightbox) {
+                    closeLightbox();
+                }
+            });
+
+            function closeLightbox() {
+                lightbox.classList.remove('active');
+                setTimeout(() => { lightboxImg.src = ''; }, 300);
+            }
+
+            /* 5. Live Profit Calculator Logic with counting animations */
+            const inputVisitors = document.getElementById('calcVisitors');
+            const inputCTR = document.getElementById('calcCTR');
+            const inputCPC = document.getElementById('calcCPC');
+
+            const valVisitors = document.getElementById('valVisitors');
+            const valCTR = document.getElementById('valCTR');
+            const valCPC = document.getElementById('valCPC');
+            const displayTotal = document.getElementById('calcTotalIncome');
+
+            let currentAnimatedTotal = 0;
+
+            function calculateEarnings() {
+                const visitors = parseInt(inputVisitors.value, 10);
+                const ctr = parseFloat(inputCTR.value);
+                const cpc = parseFloat(inputCPC.value);
+
+                // Income Formula: Visitors × CTR% × CPC × 30 days
+                const estimatedIncome = visitors * (ctr / 100) * cpc * 30;
+
+                // Update text display states
+                valVisitors.innerText = visitors.toLocaleString('en-IN');
+                valCTR.innerText = ctr.toFixed(1) + '%';
+                valCPC.innerText = '₹' + cpc.toFixed(2);
+
+                animateEarningsCounter(estimatedIncome);
+            }
+
+            function animateEarningsCounter(targetValue) {
+                const start = currentAnimatedTotal;
+                const end = targetValue;
+                const duration = 500; // milliseconds
+                let startTime = null;
+
+                function animationStep(currentTime) {
+                    if (!startTime) startTime = currentTime;
+                    const progress = Math.min((currentTime - startTime) / duration, 1);
+                    const easeProgress = 1 - Math.pow(1 - progress, 3); // Cubic ease-out
+
+                    const valueNow = Math.floor(start + (end - start) * easeProgress);
+                    displayTotal.innerText = '₹' + valueNow.toLocaleString('en-IN');
+                    currentAnimatedTotal = valueNow;
+
+                    if (progress < 1) {
+                        requestAnimationFrame(animationStep);
+                    } else {
+                        displayTotal.innerText = '₹' + Math.floor(end).toLocaleString('en-IN');
+                        currentAnimatedTotal = end;
+                    }
+                }
+
+                requestAnimationFrame(animationStep);
+            }
+
+            // Event Listeners for real-time calculations
+            inputVisitors.addEventListener('input', calculateEarnings);
+            inputCTR.addEventListener('input', calculateEarnings);
+            inputCPC.addEventListener('input', calculateEarnings);
+
+            // Trigger initial calculation state
+            calculateEarnings();
+
+            /* 6. Accessible Accordion Component */
+            const faqHeaders = document.querySelectorAll('.faq-header');
+
+            faqHeaders.forEach(header => {
+                header.addEventListener('click', () => {
+                    const item = header.parentElement;
+                    const isActive = item.classList.contains('faq-item--active');
+                    const content = item.querySelector('.faq-content');
+
+                    // Close all other accordion drawers
+                    document.querySelectorAll('.faq-item').forEach(otherItem => {
+                        if (otherItem !== item) {
+                            otherItem.classList.remove('faq-item--active');
+                            otherItem.querySelector('.faq-content').style.maxHeight = null;
+                            otherItem.querySelector('.faq-header').setAttribute('aria-expanded', 'false');
+                        }
+                    });
+
+                    // Toggle active visual states
+                    if (isActive) {
+                        item.classList.remove('faq-item--active');
+                        content.style.maxHeight = null;
+                        header.setAttribute('aria-expanded', 'false');
+                    } else {
+                        item.classList.add('faq-item--active');
+                        content.style.maxHeight = content.scrollHeight + 'px';
+                        header.setAttribute('aria-expanded', 'true');
+                    }
+                });
+            });
+
+            /* 7. Back-to-Top Navigation Button Logic */
+            const backToTopBtn = document.getElementById('backToTop');
+
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 500) {
+                    backToTopBtn.classList.add('visible');
+                } else {
+                    backToTopBtn.classList.remove('visible');
+                }
+            }, { passive: true });
+
+            backToTopBtn.addEventListener('click', () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
